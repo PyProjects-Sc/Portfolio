@@ -1,0 +1,136 @@
+{% extends "base.html" %} {% block content %} {% load static %}
+<section id="home" class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row align-items-center min-vh-100">
+      <!-- Left Content -->
+      <div class="col-lg-6 order-2 order-lg-1">
+        <p class="text-info fw-semibold mb-2">Hello, I'm</p>
+
+        <h1 class="display-3 fw-bold">Subham Chakraborty</h1>
+
+        <h2 class="fw-bold mb-3">
+          <span class="text-primary">Python</span>
+          Full-Stack Developer
+        </h2>
+
+        <h4 class="text-secondary mb-4">Django Enthusiast & ML Developer</h4>
+
+        <p class="lead text-light-emphasis">
+          Building scalable web applications and intelligent machine learning
+          solutions that solve real-world problems. Passionate about clean code,
+          backend development, and continuous learning.
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-4">
+          <a href="#projects" class="btn btn-primary btn-lg me-2">
+            View Projects
+          </a>
+
+          <a href="resume.pdf" class="btn btn-outline-light btn-lg">
+            Download CV
+          </a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="mt-4 d-flex gap-3">
+          <a href="#" class="btn btn-outline-light rounded-circle">
+            <i class="bi bi-github"></i>
+          </a>
+
+          <a href="#" class="btn btn-outline-light rounded-circle">
+            <i class="bi bi-linkedin"></i>
+          </a>
+
+          <a href="#" class="btn btn-outline-light rounded-circle">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="row mt-5 g-3">
+          <div class="col-6 col-md-3">
+            <div
+              class="card bg-secondary bg-opacity-25 border-light text-center text-white"
+            >
+              <div class="card-body">
+                <h4>2+</h4>
+                <small>Projects</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div
+              class="card bg-secondary bg-opacity-25 border-light text-center text-white"
+            >
+              <div class="card-body">
+                <h4>MCA</h4>
+                <small>Graduate</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div
+              class="card bg-secondary bg-opacity-25 border-light text-center text-white"
+            >
+              <div class="card-body">
+                <h4>Django</h4>
+                <small>Backend</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div
+              class="card bg-secondary bg-opacity-25 border-light text-center text-white"
+            >
+              <div class="card-body">
+                <h4>ML</h4>
+                <small>Projects</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div
+        class="col-lg-6 text-center mb-5 mb-lg-0 order-1 order-lg-2 d-none d-lg-block"
+      >
+        <div class="position-relative d-inline-block">
+          <img
+            src="{% static 'images/profile.png' %}"
+            alt="Subham"
+            class="img-fluid rounded-circle border border-primary border-4 shadow"
+            style="width: 100%; max-width: 400px; height: auto"
+          />
+
+          <!-- Floating Skills -->
+          <span class="badge bg-primary position-absolute top-0 start-0 p-3">
+            Python
+          </span>
+
+          <span
+            class="badge bg-success position-absolute top-50 end-0 translate-middle-y p-3"
+          >
+            Django
+          </span>
+
+          <span
+            class="badge bg-warning text-dark position-absolute bottom-0 start-0 translate-middle-y p-3"
+          >
+            MySQL
+          </span>
+
+          <span class="badge bg-danger position-absolute bottom-0 end-0 p-3">
+            HTML
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

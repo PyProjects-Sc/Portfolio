@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Skills - My Portfolio{% endblock %}
+
+{% block content %}
+
+
+<section id="about" class="bg-dark text-light py-5 mt-5" style="padding-top: 6rem;">
+    <div class="container">
+
+        <h2 class="text-center mb-5">
+            My <span class="text-primary">Skills</span>
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card bg-dark text-center text-light h-100">
+                    <div class="card-body">
+                        <h4>Programming</h4>
+                        <span class="badge bg-primary">Python</span>
+                        <span class="badge bg-primary">C</span>
+                        <span class="badge bg-primary">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-dark text-center text-light h-100">
+                    <div class="card-body">
+                        <h4>Frontend</h4>
+                        <span class="badge bg-success">HTML</span>
+                        <span class="badge bg-success">CSS</span>
+                        <span class="badge bg-success">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-dark text-center text-light h-100">
+                    <div class="card-body">
+                        <h4>Backend</h4>
+                        <span class="badge bg-warning">Django</span>
+                        <span class="badge bg-warning">Node.js</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
